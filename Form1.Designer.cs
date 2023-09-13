@@ -51,9 +51,12 @@ namespace ProgressBar
             lblAllTimeHigh = new System.Windows.Forms.Label();
             tbxBabyShibAth = new System.Windows.Forms.TextBox();
             tbxBabyDogeAth = new System.Windows.Forms.TextBox();
-            textBox1 = new System.Windows.Forms.TextBox();
-            textBox2 = new System.Windows.Forms.TextBox();
+            btxMcXs = new System.Windows.Forms.TextBox();
+            tbxAthXs = new System.Windows.Forms.TextBox();
             lblXsNeeded = new System.Windows.Forms.Label();
+            label5 = new System.Windows.Forms.Label();
+            label6 = new System.Windows.Forms.Label();
+            label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)picBabyDoge).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -62,9 +65,9 @@ namespace ProgressBar
             // 
             progressBar1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             progressBar1.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            progressBar1.Location = new System.Drawing.Point(31, 255);
+            progressBar1.Location = new System.Drawing.Point(31, 334);
             progressBar1.Name = "progressBar1";
-            progressBar1.Size = new System.Drawing.Size(596, 23);
+            progressBar1.Size = new System.Drawing.Size(525, 23);
             progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             progressBar1.TabIndex = 0;
             // 
@@ -73,22 +76,22 @@ namespace ProgressBar
             lblBabyDogeMc.AutoSize = true;
             lblBabyDogeMc.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             lblBabyDogeMc.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            lblBabyDogeMc.Location = new System.Drawing.Point(130, 85);
+            lblBabyDogeMc.Location = new System.Drawing.Point(400, 171);
             lblBabyDogeMc.Name = "lblBabyDogeMc";
-            lblBabyDogeMc.Size = new System.Drawing.Size(102, 21);
+            lblBabyDogeMc.Size = new System.Drawing.Size(98, 21);
             lblBabyDogeMc.TabIndex = 1;
-            lblBabyDogeMc.Text = "$BabyDoge:";
+            lblBabyDogeMc.Text = "$BabyDoge";
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             label1.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            label1.Location = new System.Drawing.Point(137, 121);
+            label1.Location = new System.Drawing.Point(83, 171);
             label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(95, 21);
+            label1.Size = new System.Drawing.Size(91, 21);
             label1.TabIndex = 2;
-            label1.Text = "$BabyShib:";
+            label1.Text = "$BabyShib";
             // 
             // tbxBabyDogeMc
             // 
@@ -96,9 +99,9 @@ namespace ProgressBar
             tbxBabyDogeMc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             tbxBabyDogeMc.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             tbxBabyDogeMc.ForeColor = System.Drawing.Color.Black;
-            tbxBabyDogeMc.Location = new System.Drawing.Point(238, 82);
+            tbxBabyDogeMc.Location = new System.Drawing.Point(388, 195);
             tbxBabyDogeMc.Name = "tbxBabyDogeMc";
-            tbxBabyDogeMc.Size = new System.Drawing.Size(137, 29);
+            tbxBabyDogeMc.Size = new System.Drawing.Size(121, 29);
             tbxBabyDogeMc.TabIndex = 3;
             tbxBabyDogeMc.TabStop = false;
             tbxBabyDogeMc.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -109,9 +112,9 @@ namespace ProgressBar
             tbxBabyShibMc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             tbxBabyShibMc.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             tbxBabyShibMc.ForeColor = System.Drawing.Color.Black;
-            tbxBabyShibMc.Location = new System.Drawing.Point(238, 118);
+            tbxBabyShibMc.Location = new System.Drawing.Point(68, 195);
             tbxBabyShibMc.Name = "tbxBabyShibMc";
-            tbxBabyShibMc.Size = new System.Drawing.Size(137, 29);
+            tbxBabyShibMc.Size = new System.Drawing.Size(121, 29);
             tbxBabyShibMc.TabIndex = 4;
             tbxBabyShibMc.TabStop = false;
             tbxBabyShibMc.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -121,29 +124,29 @@ namespace ProgressBar
             lblMarketCap.AutoSize = true;
             lblMarketCap.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             lblMarketCap.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            lblMarketCap.Location = new System.Drawing.Point(238, 54);
+            lblMarketCap.Location = new System.Drawing.Point(27, 200);
             lblMarketCap.Name = "lblMarketCap";
-            lblMarketCap.Size = new System.Drawing.Size(97, 21);
+            lblMarketCap.Size = new System.Drawing.Size(35, 21);
             lblMarketCap.TabIndex = 5;
-            lblMarketCap.Text = "Market Cap";
+            lblMarketCap.Text = "MC";
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             label2.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            label2.Location = new System.Drawing.Point(153, 157);
+            label2.Location = new System.Drawing.Point(202, 171);
             label2.Name = "label2";
-            label2.Size = new System.Drawing.Size(79, 21);
+            label2.Size = new System.Drawing.Size(75, 21);
             label2.TabIndex = 7;
-            label2.Text = "Progress:";
+            label2.Text = "Progress";
             // 
             // lbl24HourChange
             // 
             lbl24HourChange.AutoSize = true;
             lbl24HourChange.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             lbl24HourChange.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            lbl24HourChange.Location = new System.Drawing.Point(151, 332);
+            lbl24HourChange.Location = new System.Drawing.Point(151, 411);
             lbl24HourChange.Name = "lbl24HourChange";
             lbl24HourChange.Size = new System.Drawing.Size(81, 21);
             lbl24HourChange.TabIndex = 8;
@@ -154,7 +157,7 @@ namespace ProgressBar
             label3.AutoSize = true;
             label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             label3.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            label3.Location = new System.Drawing.Point(168, 366);
+            label3.Location = new System.Drawing.Point(168, 445);
             label3.Name = "label3";
             label3.Size = new System.Drawing.Size(64, 21);
             label3.TabIndex = 9;
@@ -164,7 +167,7 @@ namespace ProgressBar
             // 
             lblDate.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             lblDate.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            lblDate.Location = new System.Drawing.Point(87, 9);
+            lblDate.Location = new System.Drawing.Point(41, 9);
             lblDate.Name = "lblDate";
             lblDate.Size = new System.Drawing.Size(500, 30);
             lblDate.TabIndex = 12;
@@ -176,7 +179,7 @@ namespace ProgressBar
             label4.AutoSize = true;
             label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             label4.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            label4.Location = new System.Drawing.Point(238, 302);
+            label4.Location = new System.Drawing.Point(238, 381);
             label4.Name = "label4";
             label4.Size = new System.Drawing.Size(137, 21);
             label4.TabIndex = 13;
@@ -186,7 +189,7 @@ namespace ProgressBar
             // 
             lblPercent0.AutoSize = true;
             lblPercent0.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            lblPercent0.Location = new System.Drawing.Point(26, 281);
+            lblPercent0.Location = new System.Drawing.Point(26, 360);
             lblPercent0.Name = "lblPercent0";
             lblPercent0.Size = new System.Drawing.Size(23, 15);
             lblPercent0.TabIndex = 14;
@@ -196,7 +199,7 @@ namespace ProgressBar
             // 
             lblPercent100.AutoSize = true;
             lblPercent100.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            lblPercent100.Location = new System.Drawing.Point(486, 281);
+            lblPercent100.Location = new System.Drawing.Point(533, 360);
             lblPercent100.Name = "lblPercent100";
             lblPercent100.Size = new System.Drawing.Size(35, 15);
             lblPercent100.TabIndex = 15;
@@ -208,9 +211,9 @@ namespace ProgressBar
             tbxProgressMc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             tbxProgressMc.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             tbxProgressMc.ForeColor = System.Drawing.Color.Black;
-            tbxProgressMc.Location = new System.Drawing.Point(238, 155);
+            tbxProgressMc.Location = new System.Drawing.Point(202, 195);
             tbxProgressMc.Name = "tbxProgressMc";
-            tbxProgressMc.Size = new System.Drawing.Size(137, 29);
+            tbxProgressMc.Size = new System.Drawing.Size(79, 29);
             tbxProgressMc.TabIndex = 16;
             tbxProgressMc.TabStop = false;
             // 
@@ -218,7 +221,7 @@ namespace ProgressBar
             // 
             picBabyDoge.Image = Properties.Resources.babydoge;
             picBabyDoge.InitialImage = Properties.Resources.babydoge;
-            picBabyDoge.Location = new System.Drawing.Point(550, 85);
+            picBabyDoge.Location = new System.Drawing.Point(411, 56);
             picBabyDoge.Name = "picBabyDoge";
             picBabyDoge.Size = new System.Drawing.Size(77, 100);
             picBabyDoge.TabIndex = 17;
@@ -228,7 +231,7 @@ namespace ProgressBar
             // 
             pictureBox1.Image = Properties.Resources.babyshib;
             pictureBox1.InitialImage = Properties.Resources.babyshib;
-            pictureBox1.Location = new System.Drawing.Point(31, 82);
+            pictureBox1.Location = new System.Drawing.Point(90, 56);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new System.Drawing.Size(79, 100);
             pictureBox1.TabIndex = 18;
@@ -240,7 +243,7 @@ namespace ProgressBar
             tbxChange24hours.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             tbxChange24hours.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             tbxChange24hours.ForeColor = System.Drawing.Color.Black;
-            tbxChange24hours.Location = new System.Drawing.Point(238, 330);
+            tbxChange24hours.Location = new System.Drawing.Point(238, 409);
             tbxChange24hours.Name = "tbxChange24hours";
             tbxChange24hours.Size = new System.Drawing.Size(162, 29);
             tbxChange24hours.TabIndex = 19;
@@ -252,7 +255,7 @@ namespace ProgressBar
             tbxChange7days.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             tbxChange7days.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             tbxChange7days.ForeColor = System.Drawing.Color.Black;
-            tbxChange7days.Location = new System.Drawing.Point(238, 366);
+            tbxChange7days.Location = new System.Drawing.Point(238, 445);
             tbxChange7days.Name = "tbxChange7days";
             tbxChange7days.Size = new System.Drawing.Size(162, 29);
             tbxChange7days.TabIndex = 20;
@@ -264,9 +267,9 @@ namespace ProgressBar
             tbxProgressAth.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             tbxProgressAth.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             tbxProgressAth.ForeColor = System.Drawing.Color.Black;
-            tbxProgressAth.Location = new System.Drawing.Point(395, 156);
+            tbxProgressAth.Location = new System.Drawing.Point(202, 232);
             tbxProgressAth.Name = "tbxProgressAth";
-            tbxProgressAth.Size = new System.Drawing.Size(137, 29);
+            tbxProgressAth.Size = new System.Drawing.Size(79, 29);
             tbxProgressAth.TabIndex = 24;
             tbxProgressAth.TabStop = false;
             // 
@@ -275,7 +278,7 @@ namespace ProgressBar
             lblAllTimeHigh.AutoSize = true;
             lblAllTimeHigh.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             lblAllTimeHigh.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            lblAllTimeHigh.Location = new System.Drawing.Point(395, 55);
+            lblAllTimeHigh.Location = new System.Drawing.Point(21, 235);
             lblAllTimeHigh.Name = "lblAllTimeHigh";
             lblAllTimeHigh.Size = new System.Drawing.Size(41, 21);
             lblAllTimeHigh.TabIndex = 23;
@@ -287,9 +290,9 @@ namespace ProgressBar
             tbxBabyShibAth.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             tbxBabyShibAth.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             tbxBabyShibAth.ForeColor = System.Drawing.Color.Black;
-            tbxBabyShibAth.Location = new System.Drawing.Point(395, 119);
+            tbxBabyShibAth.Location = new System.Drawing.Point(68, 232);
             tbxBabyShibAth.Name = "tbxBabyShibAth";
-            tbxBabyShibAth.Size = new System.Drawing.Size(137, 29);
+            tbxBabyShibAth.Size = new System.Drawing.Size(121, 29);
             tbxBabyShibAth.TabIndex = 22;
             tbxBabyShibAth.TabStop = false;
             tbxBabyShibAth.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -300,56 +303,94 @@ namespace ProgressBar
             tbxBabyDogeAth.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             tbxBabyDogeAth.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             tbxBabyDogeAth.ForeColor = System.Drawing.Color.Black;
-            tbxBabyDogeAth.Location = new System.Drawing.Point(395, 83);
+            tbxBabyDogeAth.Location = new System.Drawing.Point(388, 232);
             tbxBabyDogeAth.Name = "tbxBabyDogeAth";
-            tbxBabyDogeAth.Size = new System.Drawing.Size(137, 29);
+            tbxBabyDogeAth.Size = new System.Drawing.Size(121, 29);
             tbxBabyDogeAth.TabIndex = 21;
             tbxBabyDogeAth.TabStop = false;
             tbxBabyDogeAth.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox1
+            // btxMcXs
             // 
-            textBox1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            textBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            textBox1.ForeColor = System.Drawing.Color.Black;
-            textBox1.Location = new System.Drawing.Point(395, 193);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new System.Drawing.Size(137, 29);
-            textBox1.TabIndex = 27;
-            textBox1.TabStop = false;
+            btxMcXs.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            btxMcXs.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            btxMcXs.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            btxMcXs.ForeColor = System.Drawing.Color.Black;
+            btxMcXs.Location = new System.Drawing.Point(296, 195);
+            btxMcXs.Name = "btxMcXs";
+            btxMcXs.Size = new System.Drawing.Size(79, 29);
+            btxMcXs.TabIndex = 27;
+            btxMcXs.TabStop = false;
+            btxMcXs.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox2
+            // tbxAthXs
             // 
-            textBox2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            textBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            textBox2.ForeColor = System.Drawing.Color.Black;
-            textBox2.Location = new System.Drawing.Point(238, 193);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new System.Drawing.Size(137, 29);
-            textBox2.TabIndex = 26;
-            textBox2.TabStop = false;
+            tbxAthXs.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            tbxAthXs.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            tbxAthXs.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            tbxAthXs.ForeColor = System.Drawing.Color.Black;
+            tbxAthXs.Location = new System.Drawing.Point(296, 232);
+            tbxAthXs.Name = "tbxAthXs";
+            tbxAthXs.Size = new System.Drawing.Size(79, 29);
+            tbxAthXs.TabIndex = 26;
+            tbxAthXs.TabStop = false;
+            tbxAthXs.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lblXsNeeded
             // 
             lblXsNeeded.AutoSize = true;
             lblXsNeeded.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             lblXsNeeded.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            lblXsNeeded.Location = new System.Drawing.Point(136, 195);
+            lblXsNeeded.Location = new System.Drawing.Point(291, 171);
             lblXsNeeded.Name = "lblXsNeeded";
-            lblXsNeeded.Size = new System.Drawing.Size(96, 21);
+            lblXsNeeded.Size = new System.Drawing.Size(84, 21);
             lblXsNeeded.TabIndex = 25;
-            lblXsNeeded.Text = "X's needed:";
+            lblXsNeeded.Text = "X Needed";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            label5.ForeColor = System.Drawing.Color.DarkGoldenrod;
+            label5.Location = new System.Drawing.Point(515, 200);
+            label5.Name = "label5";
+            label5.Size = new System.Drawing.Size(35, 21);
+            label5.TabIndex = 28;
+            label5.Text = "MC";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            label6.ForeColor = System.Drawing.Color.DarkGoldenrod;
+            label6.Location = new System.Drawing.Point(515, 235);
+            label6.Name = "label6";
+            label6.Size = new System.Drawing.Size(41, 21);
+            label6.TabIndex = 29;
+            label6.Text = "ATH";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            label7.ForeColor = System.Drawing.Color.DarkGoldenrod;
+            label7.Location = new System.Drawing.Point(68, 300);
+            label7.Name = "label7";
+            label7.Size = new System.Drawing.Size(439, 21);
+            label7.TabIndex = 30;
+            label7.Text = "Progress to overtake BabyDoge Market Cap by BabyShib";
             // 
             // Form1
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = System.Drawing.Color.FromArgb(64, 64, 64);
-            ClientSize = new System.Drawing.Size(648, 429);
-            Controls.Add(textBox1);
-            Controls.Add(textBox2);
+            ClientSize = new System.Drawing.Size(585, 492);
+            Controls.Add(label7);
+            Controls.Add(label6);
+            Controls.Add(label5);
+            Controls.Add(btxMcXs);
+            Controls.Add(tbxAthXs);
             Controls.Add(lblXsNeeded);
             Controls.Add(tbxProgressAth);
             Controls.Add(lblAllTimeHigh);
@@ -405,9 +446,12 @@ namespace ProgressBar
         private System.Windows.Forms.Label lblAllTimeHigh;
         private System.Windows.Forms.TextBox tbxBabyShibAth;
         private System.Windows.Forms.TextBox tbxBabyDogeAth;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox btxMcXs;
+        private System.Windows.Forms.TextBox tbxAthXs;
         private System.Windows.Forms.Label lblXsNeeded;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
     }
 }
 
