@@ -84,7 +84,7 @@ namespace ProgressBar
             _SnapshotDictionary[4] = new DailySnapshot { Date = new DateTime(2023, 9, 10), BabyDogeMc = 173086000, BabyShibMc = 1862000 };
             _SnapshotDictionary[5] = new DailySnapshot { Date = new DateTime(2023, 9, 11), BabyDogeMc = 171613000, BabyShibMc = 1787000 };
             _SnapshotDictionary[6] = new DailySnapshot { Date = new DateTime(2023, 9, 12), BabyDogeMc = 161701022, BabyShibMc = 3226011 };
-            _SnapshotDictionary[7] = new DailySnapshot { Date = new DateTime(2023, 9, 13), BabyDogeMc = 161465860, BabyShibMc = 3472341 };
+            _SnapshotDictionary[7] = new DailySnapshot { Date = new DateTime(2023, 9, 13), BabyDogeMc = 159734940, BabyShibMc = 3691406};
         }
     }
 }

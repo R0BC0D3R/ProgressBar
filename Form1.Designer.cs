@@ -415,7 +415,7 @@ namespace ProgressBar
             Controls.Add(lblBabyDogeMc);
             Controls.Add(progressBar1);
             Name = "Form1";
-            Text = "BabyShib Overtaking BabyDoge Progress Tracker";
+            Text = "Progress Tracker";
             ((System.ComponentModel.ISupportInitialize)picBabyDoge).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
