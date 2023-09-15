@@ -62,12 +62,12 @@ namespace ProgressBar
 
             // 24 hour progress change
             double mcDifference24hours = ((double)_SnapshotDictionary[todaysIndex - 1].BabyShibMc / _SnapshotDictionary[todaysIndex - 1].BabyDogeMc) * 100;
-            double mcChange24hours = (mcDifferenceNow - mcDifference24hours) * 100;
+            double mcChange24hours = ((mcDifferenceNow - mcDifference24hours) * 100) / mcDifference24hours;
             tbxChange24hours.Text = (mcChange24hours).ToString("N2") + "%";
 
             // 7 day progress change
             double mcDifference7days = ((double)_SnapshotDictionary[todaysIndex - 7].BabyShibMc / _SnapshotDictionary[todaysIndex - 7].BabyDogeMc) * 100;
-            double mcChange7days = (mcDifferenceNow - mcDifference7days) * 100;
+            double mcChange7days = ((mcDifferenceNow - mcDifference7days) * 100) / mcDifference7days;
             tbxChange7days.Text = (mcChange7days).ToString("N2") + "%";
         }
 
@@ -75,7 +75,7 @@ namespace ProgressBar
         {
             // Add new day as next value to array
             // Need to increment array size when adding new day
-            _SnapshotDictionary = new DailySnapshot[8];
+            _SnapshotDictionary = new DailySnapshot[9];
 
             _SnapshotDictionary[0] = new DailySnapshot { Date = new DateTime(2023, 9, 6), BabyDogeMc = 176274000, BabyShibMc = 2467000 };
             _SnapshotDictionary[1] = new DailySnapshot { Date = new DateTime(2023, 9, 7), BabyDogeMc = 176185000, BabyShibMc = 3675000 };
@@ -84,7 +84,8 @@ namespace ProgressBar
             _SnapshotDictionary[4] = new DailySnapshot { Date = new DateTime(2023, 9, 10), BabyDogeMc = 173086000, BabyShibMc = 1862000 };
             _SnapshotDictionary[5] = new DailySnapshot { Date = new DateTime(2023, 9, 11), BabyDogeMc = 171613000, BabyShibMc = 1787000 };
             _SnapshotDictionary[6] = new DailySnapshot { Date = new DateTime(2023, 9, 12), BabyDogeMc = 161701022, BabyShibMc = 3226011 };
-            _SnapshotDictionary[7] = new DailySnapshot { Date = new DateTime(2023, 9, 13), BabyDogeMc = 159734940, BabyShibMc = 3691406};
+            _SnapshotDictionary[7] = new DailySnapshot { Date = new DateTime(2023, 9, 13), BabyDogeMc = 159734940, BabyShibMc = 3691406 };
+            _SnapshotDictionary[8] = new DailySnapshot { Date = new DateTime(2023, 9, 14), BabyDogeMc = 158653835, BabyShibMc = 5087416 };
         }
     }
 }
