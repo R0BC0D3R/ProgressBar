@@ -37,7 +37,7 @@ namespace ProgressBar
             lblMarketCap = new System.Windows.Forms.Label();
             label2 = new System.Windows.Forms.Label();
             lbl24HourChange = new System.Windows.Forms.Label();
-            label3 = new System.Windows.Forms.Label();
+            lbl7DayChange = new System.Windows.Forms.Label();
             lblDate = new System.Windows.Forms.Label();
             label4 = new System.Windows.Forms.Label();
             lblPercent0 = new System.Windows.Forms.Label();
@@ -46,7 +46,7 @@ namespace ProgressBar
             picBabyDoge = new System.Windows.Forms.PictureBox();
             pictureBox1 = new System.Windows.Forms.PictureBox();
             tbxChange24hours = new System.Windows.Forms.TextBox();
-            tbxChange7days = new System.Windows.Forms.TextBox();
+            tbxChange7Days = new System.Windows.Forms.TextBox();
             tbxProgressAth = new System.Windows.Forms.TextBox();
             lblAllTimeHigh = new System.Windows.Forms.Label();
             tbxBabyShibAth = new System.Windows.Forms.TextBox();
@@ -57,6 +57,8 @@ namespace ProgressBar
             label5 = new System.Windows.Forms.Label();
             label6 = new System.Windows.Forms.Label();
             label7 = new System.Windows.Forms.Label();
+            tbxChange3Days = new System.Windows.Forms.TextBox();
+            lbl3DayChange = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)picBabyDoge).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -152,16 +154,16 @@ namespace ProgressBar
             lbl24HourChange.TabIndex = 8;
             lbl24HourChange.Text = "24 Hours:";
             // 
-            // label3
+            // lbl7DayChange
             // 
-            label3.AutoSize = true;
-            label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            label3.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            label3.Location = new System.Drawing.Point(168, 445);
-            label3.Name = "label3";
-            label3.Size = new System.Drawing.Size(64, 21);
-            label3.TabIndex = 9;
-            label3.Text = "7 Days:";
+            lbl7DayChange.AutoSize = true;
+            lbl7DayChange.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            lbl7DayChange.ForeColor = System.Drawing.Color.DarkGoldenrod;
+            lbl7DayChange.Location = new System.Drawing.Point(168, 479);
+            lbl7DayChange.Name = "lbl7DayChange";
+            lbl7DayChange.Size = new System.Drawing.Size(64, 21);
+            lbl7DayChange.TabIndex = 9;
+            lbl7DayChange.Text = "7 Days:";
             // 
             // lblDate
             // 
@@ -249,17 +251,17 @@ namespace ProgressBar
             tbxChange24hours.TabIndex = 19;
             tbxChange24hours.TabStop = false;
             // 
-            // tbxChange7days
+            // tbxChange7Days
             // 
-            tbxChange7days.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            tbxChange7days.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            tbxChange7days.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            tbxChange7days.ForeColor = System.Drawing.Color.Black;
-            tbxChange7days.Location = new System.Drawing.Point(238, 445);
-            tbxChange7days.Name = "tbxChange7days";
-            tbxChange7days.Size = new System.Drawing.Size(162, 29);
-            tbxChange7days.TabIndex = 20;
-            tbxChange7days.TabStop = false;
+            tbxChange7Days.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            tbxChange7Days.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            tbxChange7Days.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            tbxChange7Days.ForeColor = System.Drawing.Color.Black;
+            tbxChange7Days.Location = new System.Drawing.Point(238, 479);
+            tbxChange7Days.Name = "tbxChange7Days";
+            tbxChange7Days.Size = new System.Drawing.Size(162, 29);
+            tbxChange7Days.TabIndex = 20;
+            tbxChange7Days.TabStop = false;
             // 
             // tbxProgressAth
             // 
@@ -374,18 +376,43 @@ namespace ProgressBar
             label7.AutoSize = true;
             label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             label7.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            label7.Location = new System.Drawing.Point(68, 300);
+            label7.Location = new System.Drawing.Point(139, 300);
             label7.Name = "label7";
-            label7.Size = new System.Drawing.Size(439, 21);
+            label7.Size = new System.Drawing.Size(299, 21);
             label7.TabIndex = 30;
-            label7.Text = "Progress to overtake BabyDoge Market Cap by BabyShib";
+            label7.Text = "Progress to flip BabyDoge Market Cap";
+            // 
+            // tbxChange3Days
+            // 
+            tbxChange3Days.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            tbxChange3Days.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            tbxChange3Days.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            tbxChange3Days.ForeColor = System.Drawing.Color.Black;
+            tbxChange3Days.Location = new System.Drawing.Point(238, 444);
+            tbxChange3Days.Name = "tbxChange3Days";
+            tbxChange3Days.Size = new System.Drawing.Size(162, 29);
+            tbxChange3Days.TabIndex = 32;
+            tbxChange3Days.TabStop = false;
+            // 
+            // lbl3DayChange
+            // 
+            lbl3DayChange.AutoSize = true;
+            lbl3DayChange.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            lbl3DayChange.ForeColor = System.Drawing.Color.DarkGoldenrod;
+            lbl3DayChange.Location = new System.Drawing.Point(168, 444);
+            lbl3DayChange.Name = "lbl3DayChange";
+            lbl3DayChange.Size = new System.Drawing.Size(64, 21);
+            lbl3DayChange.TabIndex = 31;
+            lbl3DayChange.Text = "3 Days:";
             // 
             // Form1
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = System.Drawing.Color.FromArgb(64, 64, 64);
-            ClientSize = new System.Drawing.Size(585, 492);
+            ClientSize = new System.Drawing.Size(585, 527);
+            Controls.Add(tbxChange3Days);
+            Controls.Add(lbl3DayChange);
             Controls.Add(label7);
             Controls.Add(label6);
             Controls.Add(label5);
@@ -396,7 +423,7 @@ namespace ProgressBar
             Controls.Add(lblAllTimeHigh);
             Controls.Add(tbxBabyShibAth);
             Controls.Add(tbxBabyDogeAth);
-            Controls.Add(tbxChange7days);
+            Controls.Add(tbxChange7Days);
             Controls.Add(tbxChange24hours);
             Controls.Add(pictureBox1);
             Controls.Add(picBabyDoge);
@@ -405,7 +432,7 @@ namespace ProgressBar
             Controls.Add(lblPercent0);
             Controls.Add(label4);
             Controls.Add(lblDate);
-            Controls.Add(label3);
+            Controls.Add(lbl7DayChange);
             Controls.Add(lbl24HourChange);
             Controls.Add(label2);
             Controls.Add(lblMarketCap);
@@ -432,7 +459,7 @@ namespace ProgressBar
         private System.Windows.Forms.Label lblMarketCap;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lbl24HourChange;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lbl7DayChange;
         private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lblPercent0;
@@ -441,7 +468,7 @@ namespace ProgressBar
         private System.Windows.Forms.PictureBox picBabyDoge;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox tbxChange24hours;
-        private System.Windows.Forms.TextBox tbxChange7days;
+        private System.Windows.Forms.TextBox tbxChange7Days;
         private System.Windows.Forms.TextBox tbxProgressAth;
         private System.Windows.Forms.Label lblAllTimeHigh;
         private System.Windows.Forms.TextBox tbxBabyShibAth;
@@ -452,6 +479,8 @@ namespace ProgressBar
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox tbxChange3Days;
+        private System.Windows.Forms.Label lbl3DayChange;
     }
 }
 

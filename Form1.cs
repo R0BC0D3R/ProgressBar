@@ -27,14 +27,14 @@ namespace ProgressBar
         {
             InitializeComponent();
 
-            lblDate.Text = DateTime.Now.ToLongDateString();
-
             // Create hardcoded Market Cap snapshots
             CareteSnapshots();
 
 
             // Last item in array is for today
             int todaysIndex = _SnapshotDictionary.Length - 1;
+
+            lblDate.Text = _SnapshotDictionary[todaysIndex].Date.ToLongDateString();
 
             tbxBabyDogeMc.Text = _SnapshotDictionary[todaysIndex].BabyDogeMc.ToString("C0");
             tbxBabyShibMc.Text = _SnapshotDictionary[todaysIndex].BabyShibMc.ToString("C0");
@@ -65,17 +65,22 @@ namespace ProgressBar
             double mcChange24hours = ((mcDifferenceNow - mcDifference24hours) * 100) / mcDifference24hours;
             tbxChange24hours.Text = (mcChange24hours).ToString("N2") + "%";
 
+            // 3 day progress change
+            double mcDifference3days = ((double)_SnapshotDictionary[todaysIndex - 3].BabyShibMc / _SnapshotDictionary[todaysIndex - 3].BabyDogeMc) * 100;
+            double mcChange3days = ((mcDifferenceNow - mcDifference3days) * 100) / mcDifference3days;
+            tbxChange3Days.Text = (mcChange3days).ToString("N2") + "%";
+
             // 7 day progress change
             double mcDifference7days = ((double)_SnapshotDictionary[todaysIndex - 7].BabyShibMc / _SnapshotDictionary[todaysIndex - 7].BabyDogeMc) * 100;
             double mcChange7days = ((mcDifferenceNow - mcDifference7days) * 100) / mcDifference7days;
-            tbxChange7days.Text = (mcChange7days).ToString("N2") + "%";
+            tbxChange7Days.Text = (mcChange7days).ToString("N2") + "%";
         }
 
         private void CareteSnapshots()
         {
             // Add new day as next value to array
             // Need to increment array size when adding new day
-            _SnapshotDictionary = new DailySnapshot[9];
+            _SnapshotDictionary = new DailySnapshot[10];
 
             _SnapshotDictionary[0] = new DailySnapshot { Date = new DateTime(2023, 9, 6), BabyDogeMc = 176274000, BabyShibMc = 2467000 };
             _SnapshotDictionary[1] = new DailySnapshot { Date = new DateTime(2023, 9, 7), BabyDogeMc = 176185000, BabyShibMc = 3675000 };
@@ -86,6 +91,7 @@ namespace ProgressBar
             _SnapshotDictionary[6] = new DailySnapshot { Date = new DateTime(2023, 9, 12), BabyDogeMc = 161701022, BabyShibMc = 3226011 };
             _SnapshotDictionary[7] = new DailySnapshot { Date = new DateTime(2023, 9, 13), BabyDogeMc = 159734940, BabyShibMc = 3691406 };
             _SnapshotDictionary[8] = new DailySnapshot { Date = new DateTime(2023, 9, 14), BabyDogeMc = 158653835, BabyShibMc = 5087416 };
+            _SnapshotDictionary[9] = new DailySnapshot { Date = new DateTime(2023, 9, 15), BabyDogeMc = 159365866, BabyShibMc = 4522963 };
         }
     }
 }
