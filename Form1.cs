@@ -80,7 +80,7 @@ namespace ProgressBar
         {
             // Add new day as next value to array
             // Need to increment array size when adding new day
-            _SnapshotDictionary = new DailySnapshot[15];
+            _SnapshotDictionary = new DailySnapshot[22];
 
             _SnapshotDictionary[0] = new DailySnapshot { Date = new DateTime(2023, 9, 6), BabyDogeMc = 176274000, BabyShibMc = 2467000 };
             _SnapshotDictionary[1] = new DailySnapshot { Date = new DateTime(2023, 9, 7), BabyDogeMc = 176185000, BabyShibMc = 3675000 };
@@ -97,6 +97,13 @@ namespace ProgressBar
             _SnapshotDictionary[12] = new DailySnapshot { Date = new DateTime(2023, 9, 18), BabyDogeMc = 160405061, BabyShibMc = 3489058 };
             _SnapshotDictionary[13] = new DailySnapshot { Date = new DateTime(2023, 9, 19), BabyDogeMc = 164661068, BabyShibMc = 2396558 };
             _SnapshotDictionary[14] = new DailySnapshot { Date = new DateTime(2023, 9, 20), BabyDogeMc = 164374542, BabyShibMc = 2031281 };
+            _SnapshotDictionary[15] = new DailySnapshot { Date = new DateTime(2023, 9, 21), BabyDogeMc = 157428195, BabyShibMc = 2282794 };
+            _SnapshotDictionary[16] = new DailySnapshot { Date = new DateTime(2023, 9, 22), BabyDogeMc = 164953720, BabyShibMc = 2708814 };
+            _SnapshotDictionary[17] = new DailySnapshot { Date = new DateTime(2023, 9, 23), BabyDogeMc = 164222788, BabyShibMc = 2336321 };
+            _SnapshotDictionary[18] = new DailySnapshot { Date = new DateTime(2023, 9, 24), BabyDogeMc = 164049734, BabyShibMc = 2192901 };
+            _SnapshotDictionary[19] = new DailySnapshot { Date = new DateTime(2023, 9, 25), BabyDogeMc = 162748058, BabyShibMc = 1902268 };
+            _SnapshotDictionary[20] = new DailySnapshot { Date = new DateTime(2023, 9, 26), BabyDogeMc = 160532371, BabyShibMc = 2113164 };
+            _SnapshotDictionary[21] = new DailySnapshot { Date = new DateTime(2023, 9, 27), BabyDogeMc = 159522784, BabyShibMc = 1998160 };
         }
     }
 }
